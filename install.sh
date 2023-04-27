@@ -38,7 +38,7 @@ for ((int = 0; int < ${#REGEX[@]}; int++)); do
     [[ $(echo "$SYS" | tr '[:upper:]' '[:lower:]') =~ ${REGEX[int]} ]] && SYSTEM="${RELEASE[int]}" && [[ -n $SYSTEM ]] && break
 done
 
-[[ -z $SYSTEM ]] && red "Script doesn't support your system. Please use a supported one" && exit 1
+[[ -z $SYSTEM ]] && red "OS Server Shoma Ba Panel XxX-UI Sazegari Nadarad" && exit 1
 
 cur_dir=$(pwd)
 os_version=$(grep -i version_id /etc/os-release | cut -d \" -f2 | cut -d . -f1)
@@ -84,7 +84,7 @@ check_status(){
         v4=$(curl -s4m8 ip.gs -k)
         if [[ -z $v4 && -n $v6 ]]; then
             yellow "IPv6 only is detected. So the DNS64 parsing server has been added automatically"
-            echo -e "nameserver 2606:4700:4700::1111" > /etc/resolv.conf
+            echo -e "NameServer 2606:4700:4700::1111" > /etc/resolv.conf
         fi
     fi
     sleep 1
@@ -175,8 +175,8 @@ install_xui() {
     info_bar
     
     if [[ -e /usr/local/x-ui/ ]]; then
-        yellow "The xXx-UI panel has been installed at present. Please confirm you want to update it. There would not be any data loss."
-        read -rp "Please enter the option [y/n, default n]: " yn
+        yellow "Panel Az Ghabl Nasb Mibashad ! Lotfa Taiid Konid Baraye Update. Hich Data ii Pak Nemishavad."
+        read -rp "Lotfaa Gozineh Ra Vared Konid [y/n, default n]: " yn
         if [[ $yn =~ "Y"|"y" ]]; then
             cd
             mv /etc/x-ui/x-ui.db /etc/x-ui.db.bak
@@ -189,7 +189,7 @@ install_xui() {
             rm /usr/local/x-ui/ -rf
             rm /usr/bin/x-ui -f
         else
-            red "Cancelled. The script exits!"
+            red "Cancel Shod !"
             exit 1
         fi
     fi
@@ -240,7 +240,7 @@ install_xui() {
     echo -e "--------------------------------------------------------------------------------"
     show_login_info
     echo -e ""
-    yellow "(If you cannot access the xXx-UI panel, first enter the X-UI command in the SSH command line, and then select the 17 option to let go of the firewall port)"
+    yellow "(If you cannot access the xXx-UI panel, first enter the x-ui command in the SSH command line, Va Gozine 17 Ra Bezanid Ta Port Azad Shavad!)"
 }
 
 show_login_info(){

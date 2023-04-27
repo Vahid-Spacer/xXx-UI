@@ -59,16 +59,13 @@ archAffix(){
 
 info_bar(){
     clear
-    echo -e "${YELLOW}-----------------------------------------------------------------${PLAIN}"
-    echo -e "${GREEN}                   __   _ _   _ __      ${PLAIN}"
-    echo -e "${GREEN}                 \ \/ /__| | | |__|     ${PLAIN}"
-    echo -e "${GREEN}                  \  /___| | | || |     ${PLAIN}"
-    echo -e "${GREEN}                  /  \ __| |_| || |     ${PLAIN}"
-    echo -e "${GREEN}                 /_/\_\ _ \___/|__|     ${PLAIN}"
-    echo -e "${GREEN}                                                                  ${PLAIN}"
-    echo -e "${YELLOW} ----------------------------------------------------------------${PLAIN}"
+    echo -e "${YELLOW}=========================================================${PLAIN}"
+    echo -e "${GREEN}                                                          ${PLAIN}"
+    echo -e "${GREEN}                Spacer Edit X-UI Panel                    ${PLAIN}"
+    echo -e "${GREEN}                                                          ${PLAIN}"
+    echo -e "${YELLOW}=========================================================${PLAIN}"
     echo ""
-    echo -e "OS: ${GREEN} ${CMD} ${PLAIN}"
+    echo -e "Sperating System: ${GREEN} ${CMD} ${PLAIN}"
     echo ""
     sleep 2
 }
@@ -152,13 +149,13 @@ panel_config() {
 /usr/local/x-ui/x-ui migrate
     clear
     echo -e "${yellow}Install/update finished! For security it's recommended to modify panel settings ${plain}"
-    read -p "Do you want to continue with the modification [y/n]? ": config_confirm
+    read -p "Aya Ramz Va User Mikhahid Bezarid? [y/n]? ": config_confirm
     if [[ x"${config_confirm}" == x"y" || x"${config_confirm}" == x"Y" ]]; then
-    read -rp "Please set the login user name [default is a random user name]: " config_account
+    read -rp "Lotfaa UserName Delkhah Khod Ra Vared Konid [default is a random user name]: " config_account
     [[ -z $config_account ]] && config_account=$(date +%s%N | md5sum | cut -c 1-8)
-    read -rp "Please set the login password. Don't include spaces [default is a random password]: " config_password
+    read -rp "Lotfaa PassWord Delkhah Khod Ra Vared Konid [default is a random password]: " config_password
     [[ -z $config_password ]] && config_password=$(date +%s%N | md5sum | cut -c 1-8)
-    read -rp "Please set the panel access port [default is a random port]: " config_port
+    read -rp "Lotfaa Port Panel Khod Ra Vared Konid [default is a random port]: " config_port
     [[ -z $config_port ]] && config_port=$(shuf -i 1000-65535 -n 1)
     until [[ -z $(ss -ntlp | awk '{print $4}' | grep -w "$config_port") ]]; do
         if [[ -n $(ss -ntlp | awk '{print $4}' | grep -w  "$config_port") ]]; then
@@ -217,15 +214,13 @@ install_xui() {
     rm -f install.sh
     green "xXx-UI v${last_version} Installation / Upgrade is Completed, The Panel has been Started"
     echo -e ""
-    echo -e "${YELLOW}-----------------------------------------------------------------${PLAIN}"
-    echo -e "${GREEN}                   __   _ _   _ __      ${PLAIN}"
-    echo -e "${GREEN}                 \ \/ /__| | | |__|     ${PLAIN}"
-    echo -e "${GREEN}                  \  /___| | | || |     ${PLAIN}"
-    echo -e "${GREEN}                  /  \ __| |_| || |     ${PLAIN}"
-    echo -e "${GREEN}                 /_/\_\ _ \___/|__|     ${PLAIN}"
-    echo -e "${YELLOW} ----------------------------------------------------------------${PLAIN}"
-    echo -e "xXx-UI MANAGEMENT SCRIPT USAGE: "
-    echo -e "------------------------------------------------------------------------------"
+    echo -e "${YELLOW}=========================================================${PLAIN}"
+    echo -e "${GREEN}                                                          ${PLAIN}"
+    echo -e "${GREEN}                Spacer Edit X-UI Panel                    ${PLAIN}"
+    echo -e "${GREEN}                                                          ${PLAIN}"
+    echo -e "${YELLOW}=========================================================${PLAIN}"
+    echo -e                     "xXx-UI MANAGEMENT SCRIPT USAGE: "
+    echo -e "--------------------------------------------------------------------------"
     echo -e "x-ui              - Show the management menu"
     echo -e "x-ui start        - Start xXx-UI panel"
     echo -e "x-ui stop         - Stop xXx-UI panel"

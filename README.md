@@ -17,37 +17,10 @@ xray panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese)**
 | Calculate expire date on first usage | :heavy_check_mark: |
 
 
-## API routes
-
-- `/login` with `PUSH` user data: `{username: '', password: ''}` for login
-- `/xui/API/inbounds` base for following actions:
-
-| Method | Path | Action |
-| ------------- | ------------- | ------------- |
-| GET | "/" | Get all inbounds |
-| GET | "/get/:id" | Get inbound with inbound.id |
-| POST | "/add" | Add inbound |
-| POST | "/del/:id" | Delete Inbound |
-| POST | "/update/:id" | Update Inbound |
-| POST | "/addClient/" | Add Client to inbound |
-| POST | "/delClient/:email" | Delete Client |
-| POST | "/updateClient/:index" | Update Client |
-| POST | "/:id/resetClientTraffic/:email" | Reset Client's Traffic |
-| POST | "/resetAllTraffics" | Reset traffics of all inbounds |
-| POST | "/resetAllClientTraffics/:id" | Reset traffics of all clients in an inbound |
-
-
 ## Install & Upgrade
 
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/MrCenTury/xXx-UI/master/install.sh)
-```
-
-## SSL
-```
-apt-get install certbot -y
-certbot certonly --standalone --agree-tos --register-unsafely-without-email -d yourdomain.com
-certbot renew --dry-run
 ```
 
 ## Features
@@ -75,10 +48,6 @@ certbot renew --dry-run
 - support SSL cert issue by Acme
 - support telegram bot notify and control
 - more functions in control menu
-
-
-## Panel Web
-![](media/1.png)![](media/2.png)![](media/3.png)![](media/4.png)
 
 ## shortcut  
 After Installation，you can input `x-ui`to enter control menu，current menu details：

@@ -30,9 +30,12 @@ xray panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese)**
 - Fedora 36+
 - 
 ## telegram
-- [Edited By](https://t.me/Dev_SpaceX)
+- [PV](https://t.me/Dev_SpaceX)
+- [Channel](https://t.me/xui_Spacer)
 
 ## credits
+
+- [MrCenTury/xXx-UI](https://github.com/MrCenTury/xXx-UI)
 - [vaxilu/x-ui](https://github.com/vaxilu/x-ui)
 - [XTLS/Xray-core](https://github.com/XTLS/Xray-core)
 - [telegram-bot-api](https://github.com/go-telegram-bot-api/telegram-bot-api)  

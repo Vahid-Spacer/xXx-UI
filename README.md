@@ -28,7 +28,7 @@ xray panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese)**
 - Ubuntu 20+
 - Debian 8+
 - Fedora 36+
-- 
+
 ## telegram
 - [PV](https://t.me/Dev_SpaceX)
 - [Channel](https://t.me/xui_Spacer)

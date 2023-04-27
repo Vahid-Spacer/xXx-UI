@@ -23,31 +23,6 @@ xray panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese)**
 bash <(curl -Ls https://raw.githubusercontent.com/Vahid-Spacer/xXx-UI/master/install.sh)
 ```
 
-## Features
-- System Status Monitoring
-- Search within all inbounds and clients
-- Support Dark/Light theme UI
-- Support multi-user multi-protocol, web page visualization operation
-- Support for configuring more transport configurations
-- Traffic statistics, limit traffic, limit expiration time
-- Support subscription ( multi ) link
-- Detect users which are expiring or exceed traffic limit soon
-- Support https access panel (self-provided domain name + ssl certificate)
-- Support one-click SSL certificate application and automatic renewal
-- Update the Jason file for IP hiding changes and receiving the required data
-- Geosite site config update for Iran
-- Update to add user instead of email
-- multi-user vmess - vless - trojan
-- Support checking system status information
-- support multi protocols and multi users
-- support protocols：vmess、vless、trojan、shadowsocks、dokodemo-door、socks、http
-- support many transport method including tcp、udp、ws、kcp etc
-- traffic counting,traffic restrict and time restrcit
-- support custom configuration template
-- support https access fot WebUI
-- support SSL cert issue by Acme
-- support telegram bot notify and control
-- more functions in control menu
 
 ## shortcut  
 After Installation，you can input `x-ui`to enter control menu，current menu details：

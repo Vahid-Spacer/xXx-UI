@@ -20,7 +20,7 @@ xray panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese)**
 ## Install & Upgrade
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/MrCenTury/xXx-UI/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Vahid-Spacer/xXx-UI/master/install.sh)
 ```
 
 ## Features
@@ -103,7 +103,7 @@ After Installation，you can input `x-ui`to enter control menu，current menu de
 - Fedora 36+
 - 
 ## telegram
-- [Group](https://t.me/xui_fa)
+- [Edited By](https://t.me/Dev_SpaceX)
 
 ## credits
 - [vaxilu/x-ui](https://github.com/vaxilu/x-ui)

@@ -17,9 +17,9 @@
 <a-sub-menu>
     <template slot="title">
         <a-icon type="link"></a-icon>
-        <span>xXx-UI</span>
+        <span></span>
     </template>
-    <a-menu-item key="https://github.com/MrCenTury/xXx-UI/">
+    <a-menu-item key="">
         <a-icon type="github"></a-icon>
         <span>Github</span>
     </a-menu-item>
@@ -34,12 +34,12 @@
     <span>{{ i18n "menu.logout"}}</span>
 </a-menu-item>
 
-<a-menu-item key="#">
-    <span>Panel MD v4.6</span>
+<a-menu-item key="https://github.com/Vahid-Spacer/">
+    <span>Dev SpaceX</span>
 </a-menu-item>
 {{end}}
 
-
+<center>
 {{define "commonSider"}}
 <a-layout-sider :theme="siderDrawer.theme" id="sider" collapsible breakpoint="md" collapsed-width="0">
     <a-menu :theme="siderDrawer.theme" mode="inline" selected-keys="">
@@ -49,6 +49,7 @@
             un-checked-children="🌙"
             @change="siderDrawer.changeTheme()"></a-switch>
         </a-menu-item>
+<center>
     </a-menu>
     <a-menu :theme="siderDrawer.theme" mode="inline" :selected-keys="['{{ .request_uri }}']"
             @click="({key}) => key.startsWith('http') ? window.open(key) : location.href = key">
